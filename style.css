@@ -330,3 +330,5 @@ table.compare td.yes { color: var(--teal-dark); font-weight: 600; }
   .cta-band { padding: 28px 22px; }
   .callout { padding: 22px; }
 }
+
+.equal-housing { display: block; width: 100%; text-align: center; margin-top: 6px; font-size: 0.82em; opacity: 0.75; letter-spacing: 0.04em; }
