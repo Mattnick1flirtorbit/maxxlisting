@@ -186,6 +186,30 @@ section p { max-width: 780px; margin: 0 0 16px; }
 .card a { font-weight: 600; text-decoration: none; }
 .card a:hover { text-decoration: underline; }
 
+/* ---------- Watch slot (vertical video) ---------- */
+.watch-slot {
+  max-width: 340px;
+  margin: 30px auto 14px;
+  text-align: center;
+}
+.watch-label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin: 0 auto 12px;
+  max-width: none;
+  text-align: center;
+}
+.watch-slot video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #000;
+}
+
 /* ---------- Sand callout (equity math) ---------- */
 .callout {
   background: var(--sand);
