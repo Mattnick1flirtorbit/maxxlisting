@@ -137,6 +137,7 @@ section h2 {
 section h3 { color: var(--navy-2); margin: 0 0 8px; font-size: 1.14rem; }
 section p { max-width: 780px; margin: 0 0 16px; }
 .narrow { max-width: 780px; }
+.fineprint { font-size: 0.9rem; color: var(--slate); }
 
 /* ---------- Card grids ---------- */
 .grid {
