@@ -419,3 +419,27 @@ table.compare td.yes { color: var(--teal-dark); font-weight: 600; }
 .bhc-prog-p small{font-size:14px;font-weight:700;color:#47617a}
 .bhc-prog-n{font-weight:600;font-size:14.5px;margin-top:2px;color:#0d2b45}
 .bhc-prog-d{font-size:13px;color:#47617a;margin-top:2px;line-height:1.4}
+
+/* ===== Mobile rendering fixes (2026-11-22) =====
+   1) Hero accent square shrinks to the bottom-right corner on small screens
+      so the headline, lede and fine print sit on the paper background again
+      instead of dark text on mid-blue.
+   2) The $450 price type scales down so it fits inside its block.
+   3) The MLS band loses its desktop offset margins (they pushed it past
+      the right edge of phone screens).
+   4) Header nav wraps into tidy rows; the decorative program pill is
+      dropped on phones (List With Us already carries the message). */
+@media (max-width:900px){
+  .bhc::after{ width:340px; height:340px; top:auto; bottom:-160px; right:-140px; }
+  .bhc-mls{ margin-left:0; margin-right:0; }
+  .bhc-price{ font-size:92px; letter-spacing:-2px; }
+  .bhc-priceblock{ padding:24px 22px 26px; }
+}
+@media (max-width:640px){
+  .bhc-logoplate img{ height:36px; }
+  .main-nav{ display:flex; flex-wrap:wrap; align-items:center; gap:9px 14px; }
+  .main-nav a{ margin-left:0; }
+  .main-nav .bhc-progtag{ display:none; }
+  .main-nav a.bhc-phone{ font-size:13.5px; padding:7px 11px; }
+  .bhc-prog-p{ font-size:20px; }
+}
